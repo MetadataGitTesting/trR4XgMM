@@ -41,10 +41,11 @@ sqlModels:
   .prophecy/metadata/sqlmodels/newmodel:
     name: newmodel
     schema: null
-    description: desc model
+    description: null
     author: nqw8shlh.97pwewly@1jawb7kc.com
     files:
     - subpath/newmodel.sql
+    - newmodel.yml
     sqlDependencies:
       models: []
       datasets: []
@@ -63,6 +64,14 @@ sqlMacros:
     files:
     - sources.yml
     createdAt: '2026-02-06 22:10:14'
+  .prophecy/metadata/sqlmacros/macro2:
+    name: macro2
+    macroType: macro2
+    description: null
+    author: nqw8shlh.97pwewly@1jawb7kc.com
+    files:
+    - sources.yml
+    createdAt: '2026-02-06 22:10:16'
 sqlSeeds:
   .prophecy/metadata/sqlseeds/seed1:
     name: seed1
@@ -72,22 +81,21 @@ sqlSeeds:
     files:
     - sources.yml
     createdAt: '2026-02-06 22:10:14'
-sqlSources:
-  .prophecy/metadata/sqlsources/source:
-    name: source
-    description: source desc
+  .prophecy/metadata/sqlseeds/seed2:
+    name: seed2
+    schema: null
+    description: null
     author: nqw8shlh.97pwewly@1jawb7kc.com
     files:
-    - sources.yml
-    createdAt: '2026-02-06 22:10:14'
-    tables: []
+    - seed2.sql
+    createdAt: '2026-02-06 22:10:16'
+sqlSources:
   .prophecy/metadata/sqlsources/multipleFileSource:
     name: multipleFileSource
-    description: multipleFileSource desc
+    description: null
     author: nqw8shlh.97pwewly@1jawb7kc.com
     files:
     - sources1.yml
-    - mfs/src/multipleFileSource.yml
     createdAt: '2026-02-06 22:10:14'
     tables:
     - name: table1
@@ -95,6 +103,14 @@ sqlSources:
       description: descr 1
       author: nqw8shlh.97pwewly@1jawb7kc.com
       createdAt: '2026-02-06 22:10:14'
+  .prophecy/metadata/sqlsources/source2:
+    name: source2
+    description: null
+    author: nqw8shlh.97pwewly@1jawb7kc.com
+    files:
+    - sources.yml
+    createdAt: '2026-02-06 22:10:16'
+    tables: []
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline
